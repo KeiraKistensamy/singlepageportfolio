@@ -1,18 +1,75 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <div class="container">
+<!-- landingSection -->
+    <section class="row" id="landing">
+
+      <LandingSection />
+
+    </section>
+
+<!-- aboutSection -->
+    <section class="row" id="about">
+
+      <AboutSection/>
+
+    </section>
+
+<!-- resumeSection -->
+    <section class="row" id="resume">
+
+      <ResumeSection/>
+
+    </section>
+
+<!-- skillsSection -->
+    <section class="row" id="skills">
+
+      <SkillsSection/>
+
+    </section>
+
+
+<!-- projectsSection -->
+    <section class="row" id="projects">
+
+
+
+    </section>
+
+<!-- testimonialsSection -->
+    <section class="row" id="testimonals">
+
+
+
+    </section>
+
+<!-- reachmeSection -->
+    <section class="row" id="reachme">
+
+
+
+    </section>
+
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+  import LandingSection from '@/components/LandingSection.vue'
+  import AboutSection from '@/components/AboutSection.vue'
+  import ResumeSection from '@/components/ResumeSection.vue'
+  import SkillsSection from '@/components/SkillsSection.vue'
 export default {
   name: 'HomeView',
   components: {
-    HelloWorld
-  }
+    LandingSection,
+    AboutSection,
+    ResumeSection,
+    SkillsSection,
+    }
 }
 </script>
+
+<style>
+
+</style>
